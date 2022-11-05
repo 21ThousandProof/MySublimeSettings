@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+void CreateGraph(vector<vector<int>> &adj, int len, int edges) {
+    rep(i, 0, edges) {
+        int f, s;
+        cin >> f >> s;
+        adj[f].PB(s);
+        adj[s].PB(f);
+    }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>_creategraph</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
