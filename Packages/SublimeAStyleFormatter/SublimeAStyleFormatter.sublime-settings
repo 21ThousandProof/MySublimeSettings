@@ -68,7 +68,7 @@
         // 'protected:' and 'private:' are indented. The struct blocks are
         // indented only if an access modifier is declared somewhere in the
         // struct. The entire block is indented. This option is effective for C++ files only.
-        "indent-classes": true,
+        "indent-classes": false,
 
         // Indent 'class' and 'struct' access modifiers, 'public:', 'protected:'
         // and 'private:', one half indent. The rest of the class is not indented.
@@ -201,7 +201,7 @@
         "delete-empty-lines": false,
 
         // Fill empty lines with the white space of the previous line.
-        "fill-empty-lines": true,
+        "fill-empty-lines": false,
 
         // Attach a pointer or reference operator (* or &) to either the variable type (left)
         // or variable name (right), or place it between the type and name (middle).
