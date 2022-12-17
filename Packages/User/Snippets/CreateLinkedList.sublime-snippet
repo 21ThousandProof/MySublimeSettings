@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[
+Node* CreateLL(Node* head) {
+	
+	int n;
+	cin >> n;
+	
+	int headVal;
+	cin >> headVal;
+
+	head = new Node(headVal);
+	
+	Node* ref = head;
+	
+	int i = 0;
+	while(i < n-1) {
+		int t;
+		cin >> t;
+		Node* toAdd = new Node(t);
+		head->next = toAdd;
+		head = toAdd;
+		i++;
+	}
+	return ref;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>_createlinkedlist</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

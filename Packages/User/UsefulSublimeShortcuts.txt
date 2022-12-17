@@ -1,0 +1,6 @@
+
+Open/Close (Toggle) Terminal -> Ctrl + `
+
+
+
+Collapse Near Cursor -> Ctrl + Shift + [
