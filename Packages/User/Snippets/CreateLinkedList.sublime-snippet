@@ -1,9 +1,6 @@
 <snippet>
 	<content><![CDATA[
-Node* CreateLL(Node* head) {
-	
-	int n;
-	cin >> n;
+Node* CreateLL(Node* head, int len) {
 	
 	int headVal;
 	cin >> headVal;
@@ -13,7 +10,7 @@ Node* CreateLL(Node* head) {
 	Node* ref = head;
 	
 	int i = 0;
-	while(i < n-1) {
+	while(i < len-1) {
 		int t;
 		cin >> t;
 		Node* toAdd = new Node(t);
