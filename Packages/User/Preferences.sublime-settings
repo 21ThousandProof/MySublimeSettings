@@ -1,8 +1,10 @@
 {
 	"color_scheme": "Packages/Devastate/Devastate.tmTheme",
+	"font_size": 11,
 	"ignored_packages":
 	[
 	],
 	"theme": "Adaptive.sublime-theme",
-	"trim_automatic_white_space": false
+	"trim_automatic_white_space": false,
+	"scroll_past_end" : true
 }

@@ -1,19 +1,19 @@
 <snippet>
 	<content><![CDATA[
-class Node {
+class ListNode {
     public:
-    int data;
-    Node* next = NULL;
+    int val;
+    ListNode* next = NULL;
     
-    Node(int _data) {
-        this->data = _data;
+    ListNode(int _data) {
+        this->val = _data;
         this->next = NULL;
     }
 };
 $1
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>_node</tabTrigger>
+	<tabTrigger>_linkedlistnode</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
