@@ -1,24 +1,24 @@
 <snippet>
 	<content><![CDATA[
 //Prints BST In Level Order Traversal (BFS)
-void PrintTree(Node* root) {
-    queue<Node*> q;
+void PrintTree(TreeNode* root) {
+    queue<TreeNode*> q;
     q.push(root);
     q.push(NULL);
     
     while(!q.empty()) {
         
-        Node* ref = q.front();
+        TreeNode* ref = q.front();
         if(ref)
-            cout << ref->data << " ";
+            cout << ref->val << " ";
         q.pop();
         
         if(ref != NULL) {
-            if(ref->L) {
-                q.push(ref->L);
+            if(ref->left) {
+                q.push(ref->left);
             }
-            if(ref->R) {
-                q.push(ref->R);
+            if(ref->right) {
+                q.push(ref->right);
             }
         } 
         else {

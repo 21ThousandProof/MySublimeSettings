@@ -1,32 +1,32 @@
 <snippet>
 	<content><![CDATA[
 //Creates BST From Level Order (BFS)
-Node* CreateTree(Node* root) {
+TreeNode* CreateTree(TreeNode* root) {
     int rootVal;
     cin >> rootVal;
-    root = new Node(rootVal);
+    root = new TreeNode(rootVal);
     
-    queue<Node*> q;
+    queue<TreeNode*> q;
     q.push(root);
     
     while (!q.empty()) {
     
-        Node* cur = q.front();
+        TreeNode* cur = q.front();
         q.pop();
         
         int l;
         cin >> l;
         
         if (l != -1) {
-            cur->L = new Node(l);
-            q.push(cur->L);
+            cur->left = new TreeNode(l);
+            q.push(cur->left);
         }
         
         int r;
         cin >> r;
         if (r != -1) {
-            cur->R = new Node(r);
-            q.push(cur->R);
+            cur->right = new TreeNode(r);
+            q.push(cur->right);
         }
         
     }

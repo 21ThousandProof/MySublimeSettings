@@ -1,15 +1,15 @@
 <snippet>
 	<content><![CDATA[
-class Node {
+class TreeNode {
     public:
-    int data;
-    Node* L = NULL;
-    Node* R = NULL;
+    int val;
+    TreeNode* left = NULL;
+    TreeNode* right = NULL;
     
-    Node(int _data) {
-        this->data = _data;
-        this->L = NULL;
-        this->R = NULL;
+    TreeNode(int _data) {
+        this->val = _data;
+        this->left = NULL;
+        this->right = NULL;
     }
 };
 ]]></content>
