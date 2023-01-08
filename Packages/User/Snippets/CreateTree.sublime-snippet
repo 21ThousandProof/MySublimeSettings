@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
 //Creates BST From Level Order (BFS)
-TreeNode* CreateTree(TreeNode* root) {
+TreeNode* CreateTree() {
     int rootVal;
     cin >> rootVal;
-    root = new TreeNode(rootVal);
+    TreeNode* root = new TreeNode(rootVal);
     
     queue<TreeNode*> q;
     q.push(root);
